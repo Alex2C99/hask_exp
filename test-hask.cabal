@@ -57,7 +57,7 @@ executable test-hask
   -- other-extensions:    
   
   -- Other library packages from which modules are imported.
-  build-depends:       base >=4.8 && <4.9 
+  build-depends:       base  
   build-depends:       primes
   
   -- Directories containing source files.
