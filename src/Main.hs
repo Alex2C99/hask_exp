@@ -1,6 +1,5 @@
 module Main where
 
-import FibTest
+import           FibTest
 
-main = do
-    print $ take 120 cyclicNp
+main = print $ take 120 cyclicNp
