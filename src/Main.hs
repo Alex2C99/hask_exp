@@ -1,5 +1,5 @@
 module Main where
 
-import           FibTest
+import FibTest
 
 main = print $ take 120 cyclicNp

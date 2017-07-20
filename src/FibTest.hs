@@ -1,7 +1,7 @@
 
 module FibTest (fib, fiblazy, sumlazy, euler, cyclic, cyclicNp) where
 
-import           Data.Numbers.Primes
+import Data.Numbers.Primes
 
 fib n = fib' n [1,1]
 
