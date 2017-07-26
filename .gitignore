@@ -1,7 +1,10 @@
 dist
 dist-*
 cabal-dev
+<<<<<<< HEAD
 out
+=======
+>>>>>>> 9b021d64fabd12dc1d58c778e6c2347e44808ec0
 *.o
 *.hi
 *.chi
@@ -19,4 +22,7 @@ cabal.sandbox.config
 .stack-work/
 cabal.project.local
 .HTF/
+<<<<<<< HEAD
 .ghc.environment.*
+=======
+>>>>>>> 9b021d64fabd12dc1d58c778e6c2347e44808ec0
