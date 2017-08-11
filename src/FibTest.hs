@@ -11,7 +11,6 @@ fib' n ac
     where s1 = last ac
           s2 = last $ init ac
 
-<<<<<<< HEAD
 fiblazy = 1 : 1 : zipWith (+) fiblazy (tail fiblazy)
 
 eul' 1 = 1
