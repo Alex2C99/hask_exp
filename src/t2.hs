@@ -1,14 +1,11 @@
 
-split :: Char -> String -> [String]
-split ch = split' ch []
-   where 
-      split' :: Char -> String -> String -> [String]
-      split'  _ cs [] = [reverse cs]
-      split' ch cs (t:ts) 
-          | t == ch   = reverse cs : split' ch [] ts
-          | otherwise = split' ch (t:cs) ts
-
 splitsemi = split ';'
 
+split :: Char -> String -> [String]
+split _ [] = [[]]
+split ch str = let (h,t) = break (==ch) str 
+                in case t of [] -> [h]
+                             (_:t1) -> h : split ch t1
+
 main :: IO ()
-main = print $ splitsemi "123;456;789;abc;def" 
+main = print $ split ';' "123;456;789;abc;def" 
